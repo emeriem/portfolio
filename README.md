@@ -2,13 +2,13 @@
 
 Welcome to my personal portfolio website — a clean, responsive, and minimalist web experience showcasing my work, skills, and journey as a creative technologist and educator.
 
-### 🧠 About Me
+### About Me
 
 I'm **Chukwuemerie Michael Ani**, a Web Developer, UI/UX Designer, and founder of [SkillForge Academy](#) - a learning platform helping aspiring minds across Nigeria (especially the Southeast) build and grow in tech.
 
 ### Live Website
 
-[View Portfolio](https://emeriem.github.io/michael-portfolio)
+[View Portfolio](https://emeriem.github.io/portfolio)
 
 ---
 
