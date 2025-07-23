@@ -1,0 +1,211 @@
+/*----------------------------------------------
+Import Font
+-----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/*----------------------------------------------
+Root variables
+-----------------------------------------------*/
+:root {
+    --color-primary: #36331f;
+    --color-secondary: #635942;
+    --color-accent: #968674;
+    --color-light: #ffffff;
+
+    --font-main: 'Poppins', sans-serif;
+}
+
+/*----------------------------------------------
+Base Reset
+-----------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+   color: var(--color-primary);
+   background-color: var(--color-light);
+   line-height: 1.6;
+   padding-top: 80px;
+}
+
+/*----------------------------------------------
+Navbar Styling
+-----------------------------------------------*/
+.navbar {
+    background-color: var(--color-light)!important;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 1.6rem;
+}
+
+.navbar-nav .nav-link {
+    color: var(--color-secondary);
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+/*----------------------------------------------
+Hero Section
+-----------------------------------------------*/
+header {
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    padding: 6rem 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.4rem;
+    color: var(--color-secondary);
+    margin-top: 1rem;
+}
+
+header .btn {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border-radius: 30px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
+}
+
+header .btn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+/*----------------------------------------------
+Sections (About, Portfolio, Contact)
+-----------------------------------------------*/
+section {
+    padding: 6rem 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/*----------------------------------------------
+Sections (Skills)
+-----------------------------------------------*/
+.tech-icon-card {
+    background-color: var(--color-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: default;
+}
+
+.tech-icon-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tech-icon-card p {
+    font-weight: 500;
+    margin: 0;
+    color: var(--color-primary);
+}
+
+/*----------------------------------------------
+Portfolio Section
+-----------------------------------------------*/
+
+.portfolio-card {
+    background-color: var(--color-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/*----------------------------------------------
+Section (Testimonials)
+-----------------------------------------------*/
+.testimonial-box {
+    transition: transform 0.3s ease;
+}
+
+.testimonial-box:hover {
+    transform: scale(1.02);
+}
+
+/*----------------------------------------------
+badges and buttons
+-----------------------------------------------*/
+.badge {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.social-links a {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    background-color: var(--color-accent);
+    color: var(--color-light);
+}
+
+/*----------------------------------------------
+Footer
+-----------------------------------------------*/
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 2.5rem 0;
+    font-size: 1rem;
+}
+
+/*----------------------------------------------
+Responsive Fixes
+-----------------------------------------------*/
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+}
