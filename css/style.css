@@ -133,20 +133,32 @@ Sections (Skills)
 /*----------------------------------------------
 Portfolio Section
 -----------------------------------------------*/
-
-.portfolio-card {
-    background-color: var(--color-light);
+.project-card {
+    border: 1px solid solid rgba(99, 89, 66, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.portfolio-card:hover {
+.project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card .card-title {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.project-card .card-text {
+    color: var(--color-secondary);
+    font-size: 0.95rem;
 }
 
 /*----------------------------------------------
 Section (Testimonials)
 -----------------------------------------------*/
+
 .testimonial-box {
     transition: transform 0.3s ease;
 }
@@ -197,6 +209,12 @@ Responsive Fixes
 
     .navbar-nav .nav-link {
         margin-left: 1rem;
+    }
+
+    .bento-card.large,
+    .bento-card.tall {
+        grid-column: span 1!important;
+        grid-row: span 1!important;
     }
 }
 
